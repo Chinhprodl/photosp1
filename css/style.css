@@ -887,14 +887,35 @@ h5{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng để làm đẹp */
   }
 
-  .chinhvideo{
-    display: flex; /* Sử dụng Flexbox để căn giữa */
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    height: 100vh; /* Chiều cao toàn màn hình */
-    background-color: #f4f4f4; /* Màu nền nhạt */
-    margin-bottom:420px;
+  .chinhvideo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0; /* Màu nền xám */
+    padding: 20px;
   }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .play-icon {
+    font-size: 50px;
+    color: #00bfae; /* Màu xanh cho nút Play */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  video {
+    border-radius: 10px;
+  }
+  
 
   h6{
     color: white;
@@ -911,3 +932,39 @@ h5{
     /* Không thiết lập width hay height để giữ nguyên kích thước ảnh */
     border-radius: 8px; /* Bo tròn góc ảnh nếu muốn */
   }
+
+
+  .tttt{
+    background-color:#f1eaea ;
+    height: 100px;
+  }
+
+  .image-row2 {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các mục xuống hàng nếu không đủ chỗ */
+    justify-content: space-between; /* Căn đều các mục trên hàng ngang */
+    gap: 20px; /* Khoảng cách giữa các mục */
+    background-color: #f1eaea;
+   
+}
+
+.image-row2 .item {
+    width: calc(25% - 20px); /* Chia thành 4 cột đều nhau, trừ đi khoảng cách */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+.image-row2 img {
+    display: block; /* Đảm bảo hình ảnh không bị inline với văn bản */
+    margin: 0 auto; /* Căn giữa hình ảnh */
+}
+
+.image-row2 p {
+    margin-top: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
+    font-size: 14px; /* Kích thước văn bản */
+    line-height: 1.5; /* Khoảng cách dòng cho dễ đọc */
+}
+ 
+.hhhh{
+    background-color:#f1eaea ;
+    height: 100px
+}
