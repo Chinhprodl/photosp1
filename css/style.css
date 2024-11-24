@@ -901,6 +901,7 @@ h5{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
   }
   
   .play-icon {
@@ -908,12 +909,18 @@ h5{
     color: #00bfae; /* Màu xanh cho nút Play */
     background-color: transparent;
     border: none;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   video {
     border-radius: 10px;
+    display: block;
+    /* Ẩn video khi không chơi */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  video.playing {
+    opacity: 1; /* Hiển thị video khi bắt đầu phát */
   }
   
 

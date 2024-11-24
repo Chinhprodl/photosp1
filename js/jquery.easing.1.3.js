@@ -203,3 +203,4 @@ jQuery.extend( jQuery.easing,
  * OF THE POSSIBILITY OF SUCH DAMAGE. 
  *
  */
+// Lấy phần tử video và nút Play
