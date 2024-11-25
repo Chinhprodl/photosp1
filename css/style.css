@@ -933,6 +933,7 @@ h6 {
   justify-content: center; /* Căn giữa các ảnh trong trang */
   gap: 250px; /* Khoảng cách giữa các ảnh */
   padding: 100px; /* Khoảng cách trên dưới của dãy ảnh */
+  
 }
 
 .image-row img {
